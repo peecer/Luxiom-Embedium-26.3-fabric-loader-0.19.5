@@ -1,5 +1,11 @@
 # Luxium + Embeddium — Minecraft 26.3 / Fabric 0.19.5
 
+## ⬇️ Download 26.3 (Fabric 0.19.5) — DEV ONLY
+
+**[Download placeholder JAR bundle (.zip)](https://github.com/peecer/Luxiom-Embedium-26.3-fabric-loader-0.19.5/releases/download/unimplemented-bootstrap-0.0.0-dev/UNIMPLEMENTED-MC-26.3-Fabric-0.19.5-BUNDLE.zip)** | **[Individual JAR downloads](https://github.com/peecer/Luxiom-Embedium-26.3-fabric-loader-0.19.5/blob/main/DOWNLOADS.md)** | **[GitHub prerelease](https://github.com/peecer/Luxiom-Embedium-26.3-fabric-loader-0.19.5/releases/tag/unimplemented-bootstrap-0.0.0-dev)**
+
+> ⚠️ **Not playable mods:** The binaries currently contain loader entrypoints only. Luxium's lighting/shaders and Embeddium's renderer are **not implemented**. Do not treat these as finished versions.
+
 > **WORK IN PROGRESS / NO PLAYABLE RELEASE** — This GitHub repository now includes a Gradle project and compilation bootstraps, but it does **not** contain the original renderer, shaders, mixins or any functional features.
 
 This repository has two port targets, **Luxium** (originally Forge 1.20.1 by Vinlanx) and **Embeddium** (original Fabric 1.20.1 binary supplied by the requester). Both must be ported to Minecraft 26.3 / Fabric 0.19.5; Java 25 is required.
