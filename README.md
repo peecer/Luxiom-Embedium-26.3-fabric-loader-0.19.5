@@ -15,7 +15,7 @@ This repository has two port targets, **Luxium** (originally Forge 1.20.1 by Vin
 
 ## Build setup
 
-1. Install Java 25 and Gradle 9.6.0, then run `gradle build` (or generate the Gradle wrapper first).
+1. Install JDK 25 and Gradle 9.7.0, then run `gradle build` (or generate the Gradle wrapper first).
 2. Check GitHub Actions for compilation results.
 3. **Do not install generated JARs as working mods.** These bootstraps only show how the mod loader can load basic entrypoints.
 
