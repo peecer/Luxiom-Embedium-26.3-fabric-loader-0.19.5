@@ -1,5 +1,3 @@
-# Important: the previous JAR releases are NOT functional Minecraft mods
-
 # Real graphics alternative for Minecraft 26.3
 
 ## What this actually does
@@ -18,35 +16,3 @@ Import the .mrpack into a Modrinth-format pack launcher, create a **separate ins
 **Status:** The pack generator and automatic checks validate metadata and version dependencies; no claim of in-game testing. No real Luxium feature code is contained here.
 
 For Forge 26.2, see [Forge alternative](https://github.com/peecer/Luxiom-Embedium-26.2-Forge-65.1.0/blob/main/WORKING_ALTERNATIVE.md).
-
----
-
-# Luxium + Embeddium — Minecraft 26.3 / Fabric 0.19.5
-
-> **WORK IN PROGRESS / NO PLAYABLE RELEASE** — This GitHub repository now includes a Gradle project and compilation bootstraps, but it does **not** contain the original renderer, shaders, mixins or any functional features.
-
-This repository has two port targets, **Luxium** (originally Forge 1.20.1 by Vinlanx) and **Embeddium** (original Fabric 1.20.1 binary supplied by the requester). Both must be ported to Minecraft 26.3 / Fabric 0.19.5; Java 25 is required.
-
-## Repository contents
-
-- `luxium/`: Fabric client-only entrypoint placeholder.
-- `embeddium/`: Fabric client-only entrypoint placeholder.
-- `settings.gradle` and `gradle.properties`: multi-project Gradle setup.
-- `.github/workflows/gradle.yml`: compile verification on pushes and PRs.
-- `docs/BINARY_AUDIT.md`: hashes, old dependency mismatch and provenance.
-- `PORT_STATUS.md`: feature and validation checklist.
-
-## Build setup
-
-1. Install JDK 25 and Gradle 9.7.0, then run `gradle build` (or generate the Gradle wrapper first).
-2. Check GitHub Actions for compilation results.
-3. **Do not install generated JARs as working mods.** These bootstraps only show how the mod loader can load basic entrypoints.
-
-## Port milestones
-
-1. Import authorized, **editable source** for Luxium and the corresponding Embeddium branch; preserve applicable copyright/license notices.
-2. Port shader resources, options GUI, renderer hooks and mixin targets to 26.3.
-3. Rework Luxium-Embeddium integration and dependency/version declarations, including the old binaries' mismatch detailed in the audit.
-4. Compile, launch in Minecraft, test graphics and world loading, then prepare actual releases.
-
-**A Gradle bootstrap is not a fork of the full implementation.** All inherited original features are currently absent.
